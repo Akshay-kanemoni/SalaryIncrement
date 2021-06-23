@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+  
+<head>
+    <title>
+   SALARY INCREMENT
+    </title>
+      
+    <style>
+        body {
+   
+    width:400px;
+    height:200px;
+    text-align:center;
+
+}
+        
+        h3 {
+            color:green;
+        }
+        form {
+            background: #fff;
+            max-width: 400px;
+            padding: 30px;
+            width: 80%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+        
+    </style>
+  <script>
+    function increment() {
+        var x, y,sum;
+        x = parseFloat(document.getElementById('firstnumber').value);
+        y = parseFloat(document.getElementById('secondnumber').value);
+        sum = x + y;
+        document.getElementById('answer').value = sum;
+    }
+    </script>
+</head>
+  
+<body style="background: url(./salary.jpg) ;background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+background-attachment: fixed;color:rgb(14, 11, 11);font-family: cursive;";>
+      
+      
+        <form name="myform">
+            <h3>SALARY INCREMENT</h3>
+            Enter the number:
+            <input type="number" id="firstnumber" value="">
+            <br>
+            <br>
+        
+            Enter the increment:
+            <input type="number" id="secondnumber" value="">
+            <br>
+            <br>
+            <input type="button"  value="Check" onClick="increment()">
+            <br>
+            <BR>
+            
+            <div>
+                <label >Output</label>
+                <input id="answer" type="text" enabled>
+        </div>
+        </form>
+    
+</body>
+  
+</html>                                                                              
+
+
